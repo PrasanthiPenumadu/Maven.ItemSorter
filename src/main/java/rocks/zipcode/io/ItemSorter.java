@@ -13,11 +13,11 @@ public class ItemSorter {
     }
 
     public Item[] sort(Comparator<Item> comparator) {
-        Comparator<Item> idComparator=Comparator.comparing(Item::getId);
+       // Comparator<Item> idComparator=Comparator.comparing(Item::getId);
       // Comparator<Item> nameComparator=Comparator.comparing(Item::getName);
        // Comparator<Item> priceComparator=Comparator.comparing(Item::getPrice);
        // Arrays.sort(items,priceComparator);
-        Arrays.sort(items,idComparator);
+        Arrays.sort(items,comparator);
         //Arrays.sort(items,nameComparator);
         return items;
     }
